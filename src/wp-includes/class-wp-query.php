@@ -3447,6 +3447,7 @@ class WP_Query {
 
 		if ( ! $this->in_the_loop ) {
 			update_post_author_caches( $this->posts );
+			update_post_parent_caches( $this->posts );
 		}
 
 		$this->in_the_loop = true;
